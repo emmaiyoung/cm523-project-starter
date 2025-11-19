@@ -4,8 +4,14 @@
 /* ===== STARTER CSS BELOW FOR body AND p IS JUST AN EXAMPLE... YOU MAY DELETE IT ===== */
 
 body {
-    background: magenta;
+    display: block;
+    margin-left: 2em;
 }
 p {
     font-size: 2em;
+}
+
+#map {
+  height: 500px;
+  width: 100%;
 }

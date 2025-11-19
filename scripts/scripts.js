@@ -1,1 +1,5 @@
 /* WRITE YOUR JS HERE... YOU MAY REQUIRE MORE THAN ONE JS FILE. IF SO SAVE IT SEPARATELY IN THE SCRIPTS DIRECTORY */
+const map = new Map('map', {
+    center: [51.505, -0.09],
+    zoom: 13
+});
