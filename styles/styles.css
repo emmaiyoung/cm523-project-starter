@@ -6,6 +6,8 @@
 body {
     display: block;
     margin-left: 2em;
+    margin-right: 2em;
+    font-family: ;
 }
 p {
     font-size: 2em;
@@ -14,4 +16,18 @@ p {
 #map {
   height: 500px;
   width: 100%;
+}
+
+/*popups*/
+.popup-content, ol {
+    background-color: #0c273d;
+    color: #fffef1;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    list-style-type: none;
+    line-height: 1.5;
 }

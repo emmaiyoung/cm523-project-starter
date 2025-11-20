@@ -1,5 +1,28 @@
 /* WRITE YOUR JS HERE... YOU MAY REQUIRE MORE THAN ONE JS FILE. IF SO SAVE IT SEPARATELY IN THE SCRIPTS DIRECTORY */
+
+import { Map, TileLayer, Marker, Popup } from '../leaflet-2.0.0-alpha.1/dist/leaflet.js';
+
 const map = new Map('map', {
-    center: [51.505, -0.09],
-    zoom: 13
+    center: [42.3601, -71.0589],
+    zoom: 13,
 });
+
+new TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '© OpenStreetMap contributors'
+}).addTo (map);
+
+//location 1
+const dunkinHTML = document.getElementById("popup-dunkin").innerHTML;
+
+new Marker([42.348906, -71.160473]).addTo(map).bindPopup(`<div class="popup-content">${dunkinHTML}</div>`);
+
+//location 2
+const targetHTML = document.getElementById("popup-target").innerHTML;
+
+new Marker([42.344903, -71.09933]).addTo(map).bindPopup(`<div class="popup-content">${targetHTML}</div>`);
+
+//location 3
+const tjmaxxHTML = document.getElementById("popup-tjmaxx").innerHTML;
+
+new Marker([42.346, -71.112]).addTo(map).bindPopup(`<div class="popup-content">${tjmaxxHTML}</div>`);
