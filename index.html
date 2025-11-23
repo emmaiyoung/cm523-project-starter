@@ -32,17 +32,18 @@
 <header>
 <h1>Boston Bathrooms</h1>
 <h4>A public bathroom map of the Boston area.</h4>
+</header>
 <nav class="nav_bar">
   <ul>
-  <li><a href="index.html"></a>Home</li>
-  <li>About</li>
-  <li>Review</li>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="review.html">Review</a></li>
+  <li><a href="about.html">About</a></li>
 </ul></nav>
-</header>
 
-<main class="container">
-<p>Click on a location to see its rating, accessability, location, and more!</p>
-
+<main>
+<div class="body_text">
+  <h3>Click on a location to see its rating, accessability, location, and more!</h3>
+</div>
 <div id="map"></div>
 </main>
 <!--location 1 popup-->
@@ -81,6 +82,25 @@
   <img src="./images/tjmaxx.jpg" alt="Photo of building." class="bathroom-photos">
 </div>
 
+<footer>
+    <img src="images/footerimage.jpg" alt="Bathroom Sink Photo">
+    <form id="contact_form">
+    <h2>Contact Us</h2>
+        <div>
+            <p>Name</p>
+            <input type="text" id="name" placeholder="Name"/>
+        </div>
+        <div>
+            <p>Email</p>
+            <input type="text" id="email" placeholder="Email"/>
+        </div>
+        <div>
+            <p>Message</p>
+            <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+        </div>
+        <button>Send</button>
+    </form>
+</footer>
 
 
     <!-- YOUR EXTERNAL PLUG-IN MAY ASK YOU TO PUT A SCRIPT TAG HERE. -->

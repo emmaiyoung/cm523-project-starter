@@ -1,10 +1,12 @@
 /* WRITE YOUR JS HERE... YOU MAY REQUIRE MORE THAN ONE JS FILE. IF SO SAVE IT SEPARATELY IN THE SCRIPTS DIRECTORY */
 
+//leaflet import for home page
+
 import { Map, TileLayer, Marker, Popup } from '../leaflet-2.0.0-alpha.1/dist/leaflet.js';
 
 const map = new Map('map', {
     center: [42.3601, -71.0589],
-    zoom: 13,
+    zoom: 10,
 });
 
 new TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -26,3 +28,7 @@ new Marker([42.344903, -71.09933]).addTo(map).bindPopup(`<div class="popup-conte
 const tjmaxxHTML = document.getElementById("popup-tjmaxx").innerHTML;
 
 new Marker([42.346, -71.112]).addTo(map).bindPopup(`<div class="popup-content">${tjmaxxHTML}</div>`);
+
+//contact us form
+
+//review form
